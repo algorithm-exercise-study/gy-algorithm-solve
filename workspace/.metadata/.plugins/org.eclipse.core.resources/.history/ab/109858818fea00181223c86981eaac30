@@ -1,0 +1,74 @@
+package day1118;
+
+import java.util.*;
+
+public class problem2 {
+	
+	static int baseball[][] = {{123, 1, 1}, {356, 1, 0}, {327, 2, 0}, {489, 0, 1}};
+	
+	static ArrayList<Integer> list = new ArrayList<Integer>();
+	static int result;
+	
+	public static void strikeBall(int array[]){
+		int strike = 0;
+		int ball = 0;
+		for(int i=1; i<=9; i++){
+			for(int j=1; j<=9; j++){
+				for(int k=1; k<=9; k++){
+					int temp = array[0];
+					
+					String str[] = Integer.toString(temp).split("");
+					int ii = Integer.parseInt(str[0]);
+					int jj = Integer.parseInt(str[1]);
+					int kk = Integer.parseInt(str[2]);
+					
+					//strike 수 파악
+					if( i == ii)
+						strike++;
+					if( j == jj)
+						strike++;
+					if( k == kk)
+						strike++;
+					if(strike != array[1])
+							break;
+					
+					//ball 수 파악
+					if( i != ii){
+						if(i == jj | i == kk)
+							ball++;
+					}
+					if( j != jj){
+						if(j == ii | j == kk)
+							ball++;
+					}
+					if( k != kk){
+						if(k == ii | k == jj)
+							ball++;
+					}
+					if(ball != array[2])
+						break;
+					else
+						list.add(i*100+j*10+k);
+				}
+			}
+		}
+	}
+	
+	public static void strikeBall2(ArrayList<Integer> list, int num, int s, int b){
+		
+	}
+	
+	public static void main(String[] args) {
+		
+		for(int i=0; i< baseball.length; i++){
+			if( i == 0){
+				strikeBall(baseball[0]);
+			}
+			else {
+				strikeBall2(array, baseball[i][0], baseball[i][1], baseball[i][2]);
+			}
+		}
+		System.out.println(result);
+		
+	}
+}

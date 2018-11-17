@@ -1,0 +1,24 @@
+package day1118;
+
+import java.util.*;
+
+public class problem2 {
+	
+	static int baseball[][] = {{123, 1, 1}, {356, 1, 0}, {327, 2, 0}, {489, 0, 1}};
+	
+	public void strikeBall(int num, int s, int b){
+		
+	}
+	
+	public void strikeBall2(int array[], int num, int s, int b){
+		
+	}
+	
+	public static void main(String[] args) {
+		
+		for(int i=0; i< baseball.length; i++){
+			
+		}
+		
+	}
+}

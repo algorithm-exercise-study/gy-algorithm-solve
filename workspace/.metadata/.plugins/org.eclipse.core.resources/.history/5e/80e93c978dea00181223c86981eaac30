@@ -1,0 +1,39 @@
+package day1118;
+
+import java.util.*;
+
+public class problem2 {
+	
+	static int baseball[][] = {{123, 1, 1}, {356, 1, 0}, {327, 2, 0}, {489, 0, 1}};
+	
+	static int array[];
+	static int result;
+	
+	public static void strikeBall(int array[]){
+		for(int i=1; i<=9; i++){
+			for(int j=1; j<=9; j++){
+				for(int k=1; k<=9; k++){
+					String[] str = Integer.toString(array[0]).split("");
+				}
+			}
+		}
+	}
+	
+	public static void strikeBall2(int array[], int num, int s, int b){
+		
+	}
+	
+	public static void main(String[] args) {
+		
+		for(int i=0; i< baseball.length; i++){
+			if( i == 0){
+				strikeBall(baseball[0]);
+			}
+			else {
+				strikeBall2(array, baseball[i][0], baseball[i][1], baseball[i][2]);
+			}
+		}
+		System.out.println(result);
+		
+	}
+}
