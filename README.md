@@ -19,5 +19,5 @@
 코딩테스트 문제
 
 [day1118]
-프로그래머스 https://programmers.co.kr/learn/courses/30/lessons/42746?language=java#
-프로그래머스 https://programmers.co.kr/learn/courses/30/lessons/42841?language=java
+problem1. 프로그래머스 https://programmers.co.kr/learn/courses/30/lessons/42746?language=java#
+problem2. 프로그래머스 https://programmers.co.kr/learn/courses/30/lessons/42841?language=java
